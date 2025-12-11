@@ -2,4 +2,5 @@
 
 library(tidyverse)
 
-ggplot(data = iris, aes(Petal.Length, y = Petal.Width))
+ggplot(data = iris, aes(Petal.Length, y = Petal.Width)) +
+  labs(title = "Iris morphometrics")
