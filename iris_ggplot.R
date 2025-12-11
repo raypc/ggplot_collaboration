@@ -2,5 +2,7 @@
 
 library(tidyverse)
 
-ggplot(data = iris, aes(Petal.Length, y = Petal.Width)) +
-  labs(title = "Iris morphometrics")
+ggplot() +
+  geom_points(data = iris,
+              aes(x = Petal.Length, y = Petal.Width)) +
+  theme_bw()
