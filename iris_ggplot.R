@@ -3,6 +3,6 @@
 library(tidyverse)
 
 ggplot() +
-  geom_points(data = iris,
-              aes(x = Petal.Length, y = Petal.Width)) +
-  theme_bw()
+  geom_points(data = iris, aes(x = Petal.Length, y = Petal.Width)) +
+  theme_bw() +
+  labs(title = "Iris morphometrics")
